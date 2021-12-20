@@ -2,7 +2,11 @@
 <div *ngFor="let producto de productos">
 
   
-  <h3>{{product.name}}</h3>
+  <h3>
+    <a [title]="product.name + ' details'">    
+        {{product.name}}
+  </a>
+  </h3>
 
 </div>
 
